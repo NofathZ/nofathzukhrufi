@@ -1,0 +1,30 @@
+.card-box {
+  width: 350px;
+  min-height: 354px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 10px 40px 50px rgba($color: #E5E9F6, $alpha: 0.4);
+  border-radius: 5px;
+  transition: .1s;
+  cursor: pointer;
+}
+
+.card-box:hover {
+  box-shadow: 10px 40px 50px rgba($color: #E5E9F6, $alpha: 0.7);
+  transition: .1s;
+}
+
+.icon-box {
+  width: 90px;
+  height: 90px;
+}
+
+.icon-wrapper {
+  min-height: 100px;
+  margin-bottom: 30px;
+}
+
+.title {
+  min-height: 70px;
+}
