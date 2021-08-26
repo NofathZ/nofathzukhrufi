@@ -1,0 +1,35 @@
+.brand {
+  color: #000000b6 !important; // three
+
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 56px;
+}
+
+.brand:hover {
+  color: #000000 !important;
+}
+
+.navbar-item {
+  color: #000000b6 !important; // four
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  text-decoration: none;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.navbar-item:hover {
+  font-weight: bold;
+  
+}
+
+.img-box {
+  width: 41px;
+  height: 41px;
+}

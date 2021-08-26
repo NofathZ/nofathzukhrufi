@@ -1,3 +1,36 @@
 .color-text {
   color: blue;
 }
+
+.container-bar .container {
+  display: flex;
+  justify-content: space-around;
+}
+.item {
+  // Delete all button style
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+
+  // Set new style
+  color: white;
+  width: 20%;
+  height: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #67C3F3;
+  border-radius: 50px;
+}
+
+.item:hover {
+  background-color: #62B0F3;
+}
+
+.hover-type:hover {
+  color: rgb(223, 223, 223);
+}

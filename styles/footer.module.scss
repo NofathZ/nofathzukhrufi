@@ -1,8 +1,6 @@
 .footer-container {
   color: white !important;
-  background-color: black !important;
-  // background: url('../asset/img/footer_logo_mark.svg') right top no-repeat;
-  background-color: black;
+  background-image: linear-gradient(to bottom, #65BDF3, #5A98F2);
 }
 
 .footer-clean {
@@ -45,10 +43,6 @@
   opacity: 0.6;
 }
 
-.hover-orange:hover {
-  color: #ED8D03;
-}
-
 .sosmed-wrapper {
   display: flex;
   justify-content: flex-start;
@@ -65,5 +59,18 @@
     justify-content: center;
     align-items: center;
   }
+  .justify-center {
+    justify-content: center;
+  }
+  .aligni-center {
+    align-items: center;
+  }
+  .text-center {
+    text-align: center;
+  }
 }
 
+.img-box {
+  width: 41px;
+  height: 41px;
+}

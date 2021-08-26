@@ -2,3 +2,47 @@
   width: 693px;
   height: 693px;
 }
+
+.read-more-btn {
+  // Delete all button style
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+
+  // Set new style
+  width: 200px;
+  height: 56px;
+  background-color: #458FF6;
+  color: white;
+  border-radius: 50px;
+
+  // Set heading four in here (cause global not work)
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+@media screen and (max-width: 768px) {
+  .image-box {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .image-box {
+    width: 100%;
+  }
+
+  .image-box:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+}

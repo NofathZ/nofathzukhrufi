@@ -5,18 +5,17 @@ export default function Header() {
   return (
     <div className="container">
       <div className="row">
-        <div className="col d-flex justify-content-center align-items-start flex-column">
-          <h1>Virtual healthcare for you</h1>
-          <p>
-            Trafalgar provides progressive, and affordable healthcare,
-            accessible on mobile and online for everyone
+        <div className="col-md d-flex justify-content-center align-items-start flex-column">
+          <h1 className="heading-one" style={{marginBottom:"25px"}}>Web Programmer</h1>
+          <p className="lead-five" style={{marginBottom:"45px"}}>
+            Hi, I am Nofath, focusing on creating Website on Front End and Back End
           </p>
-          <button>Consult today</button>
+          <button className={`${styles['read-more-btn']}`}>Read More</button>
         </div>
-        <div className="col">
+        <div className="col-md">
           <div className={styles["image-box"]}>
             <Image
-              src="/Home/home-header-illustrator.svg"
+              src="/Home/home-header-illustrator.png"
               width="600"
               height="600"
               layout="responsive"
