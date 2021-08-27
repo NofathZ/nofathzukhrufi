@@ -8,27 +8,33 @@ export default function ProjectList() {
     {
       id: 1,
       type: "Web Programming (FE)",
-      title: "Example",
-      link: "https://google.com",
+      title: "Snepy Landing Page",
+      link: "https://github.com/NofathZ/snepy-landing",
     },
     {
       id: 2,
       type: "Web Programming (FE)",
-      title: "Example",
-      link: "https://google.com",
+      title: "COM-Indo Website",
+      link: "https://github.com/NofathZ/com-website",
     },
     {
       id: 3,
-      type: "Web Programming (BE)",
-      title: "Example",
-      link: "https://google.com",
+      type: "Web Programming (FE)",
+      title: "TechnoScape 2021",
+      link: "https://github.com/NofathZ/pkljalurlomba_frontend",
     },
     {
       id: 4,
-      type: "Web Programming (BE)",
-      title: "Example",
-      link: "https://google.com",
+      type: "Web Programming (FE)",
+      title: "Countdown Website",
+      link: "https://github.com/NofathZ/countdown-rabes-raja_brawijaya",
     },
+    {
+      id: 4,
+      type: "Web Programming (FE)",
+      title: "List Penugasan Raja Brawijaya",
+      link: "https://github.com/NofathZ/list-penugasan-raja",
+    }
   ]);
   return (
     <>
