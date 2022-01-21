@@ -10,7 +10,7 @@ export default function AboutMe() {
             className="heading-two"
             style={{ color: "white", textAlign: "center" }}
           >
-            About Me
+            {"About Me"}
           </h1>
         </div>
         <div className="row">
@@ -18,22 +18,22 @@ export default function AboutMe() {
             <div className={styles["img-box"]}></div>
             <label className={`mx-3 ${styles["person-name"]}`}>
               <span className="heading-three" style={{ color: "white" }}>
-                Nofath Zukhrufi Haideal
+                {"Nofath Zukhrufi Haideal"}
               </span>
               <br />
               <span className="lead-four" style={{ color: "white" }}>
-                Web Developer
+                {"Web Developer"}
               </span>
             </label>
           </div>
           <div className="col-md d-flex align-items-center">
             <p style={{ textAlign: "justify", color: "white" }}>
-              Hello, my name is Nofath Zukhrufi Haidel, call me Nofath for
+              {`Hello, my name is Nofath Zukhrufi Haidel, call me Nofath for
               short. I was born at 02 November 2001. I'm Indonesian. Currently
               taking a colleague on one of the most popular university in my
               country, Brawijaya University. I took Informatics Engineering
               field and I really interested on Web Development, Front End and
-              Back End.
+              Back End.`}
             </p>
           </div>
         </div>

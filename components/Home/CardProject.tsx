@@ -18,7 +18,7 @@ export default function CardProject(props: any) {
         <label className="mx-3 heading-four">{type}</label>
       </div>
       <h1 className={`heading-three ${styles["title"]}`}>{title}</h1>
-      <a href={`${link}`} target="_blank" style={{textDecoration:"none"}}>
+      <a href={`${link}`} target="_blank" rel="noreferrer" style={{textDecoration:"none"}}>
         <div className="d-flex align-items-center" style={{cursor: "pointer"}}>
           <label className="heading-four" style={{color: "#458FF6", cursor: "pointer"}}>Go To Project</label>
           <svg className="mx-2" 
