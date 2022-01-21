@@ -6,34 +6,29 @@ export default function ProjectList() {
   const [filter, setFilter] = useState("");
   const [datas, setDatas] = useState([
     {
-      id: 1,
-      type: "Web Programming (FE)",
-      title: "Snepy Landing Page",
-      link: "https://github.com/NofathZ/snepy-landing",
-    },
-    {
-      id: 2,
       type: "Web Programming (FE)",
       title: "COM-Indo Website",
       link: "https://github.com/NofathZ/com-website",
     },
     {
-      id: 3,
       type: "Web Programming (FE)",
       title: "TechnoScape 2021",
       link: "https://github.com/NofathZ/pkljalurlomba_frontend",
     },
     {
-      id: 4,
       type: "Web Programming (FE)",
-      title: "Countdown Website",
-      link: "https://github.com/NofathZ/countdown-rabes-raja_brawijaya",
+      title: "Chatie (Frontend)",
+      link: "https://github.com/NofathZ/chatie-frontend",
     },
     {
-      id: 4,
+      type: "Web Programming (BE)",
+      title: "Chatie (Backend)",
+      link: "https://github.com/NofathZ/chatie-backend",
+    },
+    {
       type: "Web Programming (FE)",
-      title: "List Penugasan Raja Brawijaya",
-      link: "https://github.com/NofathZ/list-penugasan-raja",
+      title: "Trasholution",
+      link: "https://github.com/NofathZ/trasholution-frontend",
     }
   ]);
   return (
@@ -77,7 +72,7 @@ export default function ProjectList() {
                 className="col-md-4 d-flex justify-content-center align-items-center mb-5"
               >
                 <CardProject
-                  id={data.id}
+                  id={idx}
                   type={data.type}
                   title={data.title}
                   link={data.link}
@@ -89,7 +84,7 @@ export default function ProjectList() {
                 className="col-md-4 d-flex justify-content-center align-items-center mb-5"
               >
                 <CardProject
-                  id={data.id}
+                  id={idx}
                   type={data.type}
                   title={data.title}
                   link={data.link}
