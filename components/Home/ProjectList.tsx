@@ -12,23 +12,17 @@ export default function ProjectList() {
     },
     {
       type: "Web Programming (FE)",
-      title: "TechnoScape 2021",
-      link: "https://github.com/NofathZ/pkljalurlomba_frontend",
-    },
-    {
-      type: "Web Programming (FE)",
-      title: "Chatie (Frontend)",
-      link: "https://github.com/NofathZ/chatie-frontend",
-    },
-    {
-      type: "Web Programming (BE)",
-      title: "Chatie (Backend)",
-      link: "https://github.com/NofathZ/chatie-backend",
+      title: "Resilience Test",
+      link: "https://github.com/NofathZ/resilience-test"
     },
     {
       type: "Web Programming (FE)",
       title: "Trasholution",
       link: "https://github.com/NofathZ/trasholution-frontend",
+    }, {
+      type: "Web Programming (BE)",
+      title: "MangaAPI",
+      link: "https://github.com/NofathZ/mangaAPI_BE"
     }
   ]);
   return (

@@ -28,12 +28,11 @@ export default function AboutMe() {
           </div>
           <div className="col-md d-flex align-items-center">
             <p style={{ textAlign: "justify", color: "white" }}>
-              {`Hello, my name is Nofath Zukhrufi Haidel, call me Nofath for
-              short. I was born at 02 November 2001. I'm Indonesian. Currently
-              taking a colleague on one of the most popular university in my
-              country, Brawijaya University. I took Informatics Engineering
-              field and I really interested on Web Development, Front End and
-              Back End.`}
+              {`A passionate fresh graduate who has an interest in improving knowledge in Frontend Web Development and Fullstack
+Web Development. I already have more than 1 year professional experiences as a intern and freelancer as Frontend
+Web Developer. Skilled in Frontend Web Development using ReactJS and VueJS, skilled in Backend Web
+Development using NestJS. Aiming to learn new knowledge and experience to improve quality as Frontend Web
+Developer or Fullstack Web Developer`}
             </p>
           </div>
         </div>
