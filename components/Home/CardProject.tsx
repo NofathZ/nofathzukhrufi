@@ -1,6 +1,5 @@
 import styles from "../../styles/card.project.module.scss";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function CardProject(props: any) {
   const { type, title, link } = props;
@@ -10,18 +9,33 @@ export default function CardProject(props: any) {
         <div className={styles["icon-box"]}>
           <Image
             src="/Home/web-development.png"
-            width="300px"
-            height="300px"
-            layout="responsive"
+            width={300}
+            height={300}
+            alt={`${title} project thumbnail`}
+            style={{ width: "100%", height: "auto" }}
           />
         </div>
         <label className="mx-3 heading-four">{type}</label>
       </div>
       <h1 className={`heading-three ${styles["title"]}`}>{title}</h1>
-      <a href={`${link}`} target="_blank" rel="noreferrer" style={{textDecoration:"none"}}>
-        <div className="d-flex align-items-center" style={{cursor: "pointer"}}>
-          <label className="heading-four" style={{color: "#458FF6", cursor: "pointer"}}>Go To Project</label>
-          <svg className="mx-2" 
+      <a
+        href={`${link}`}
+        target="_blank"
+        rel="noreferrer"
+        style={{ textDecoration: "none" }}
+      >
+        <div
+          className="d-flex align-items-center"
+          style={{ cursor: "pointer" }}
+        >
+          <label
+            className="heading-four"
+            style={{ color: "#458FF6", cursor: "pointer" }}
+          >
+            Go To Project
+          </label>
+          <svg
+            className="mx-2"
             width="29"
             height="19"
             viewBox="0 0 29 19"

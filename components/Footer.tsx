@@ -1,4 +1,3 @@
-import Link from "next/link";
 import styles from "../styles/footer.module.scss";
 import Image from "next/image";
 
@@ -11,18 +10,26 @@ export default function Footer() {
         <div className="container-md">
           <div className="row justify-content-center">
             <div className="col-sm-3 col-md-3">
-              <div className={`mb-3 d-flex align-items-center ${styles['justify-center']}`}>
+              <div
+                className={`mb-3 d-flex align-items-center ${styles["justify-center"]}`}
+              >
                 <div className={styles["img-box"]}>
                   <Image
                     src="/brand-navbar-logo.svg"
-                    width="200"
-                    height="200"
-                    layout="responsive"
+                    width={200}
+                    height={200}
+                    alt="Nofath Logo"
+                    style={{ width: "100%", height: "auto" }}
                   />
                 </div>
-                <label className="heading-three mx-2" style={{color:"white"}}>Nofath</label>
+                <label
+                  className="heading-three mx-2"
+                  style={{ color: "white" }}
+                >
+                  Nofath
+                </label>
               </div>
-              <ul className={`d-flex flex-column ${styles['aligni-center']}`}>
+              <ul className={`d-flex flex-column ${styles["aligni-center"]}`}>
                 <li>
                   <svg
                     style={{ marginRight: "15px" }}
@@ -39,7 +46,9 @@ export default function Footer() {
                       fill="white"
                     />
                   </svg>
-                  <label className="lead-four" style={{color:"white"}}>nofath86@gmail.com</label>
+                  <label className="lead-four" style={{ color: "white" }}>
+                    nofath86@gmail.com
+                  </label>
                 </li>
                 <li>
                   <svg
@@ -57,7 +66,9 @@ export default function Footer() {
                       fill="white"
                     />
                   </svg>
-                  <label className="lead-four" style={{color:"white"}}>Indonesia</label>
+                  <label className="lead-four" style={{ color: "white" }}>
+                    Indonesia
+                  </label>
                 </li>
               </ul>
             </div>
@@ -68,7 +79,12 @@ export default function Footer() {
               {/* <h3 className={`${styles['text-center']} heading-three`} style={{color:"white"}} >My Social Media</h3> */}
             </div>
             <div className="col-sm-3 col-md-3 item">
-              <h3 className={`${styles['text-center']} heading-three`} style={{color:"white"}} >My Social Media</h3>
+              <h3
+                className={`${styles["text-center"]} heading-three`}
+                style={{ color: "white" }}
+              >
+                My Social Media
+              </h3>
               <ul className={`${styles["sosmed-wrapper"]}`}>
                 <li>
                   <a

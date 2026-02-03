@@ -15,9 +15,10 @@ export default function NavbarComp() {
             <div className={styles["img-box"]}>
               <Image
                 src="/brand-navbar-logo.svg"
-                width="200"
-                height="200"
-                layout="responsive"
+                width={200}
+                height={200}
+                alt="Nofath Logo"
+                style={{ width: "100%", height: "auto" }}
               />
             </div>
             <label className="mx-2">Nofath</label>
