@@ -1,7 +1,8 @@
 import "../styles/globals.scss";
-import 'bootstrap/dist/css/bootstrap.css';
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
 import type { AppProps } from "next/app";
-import Head from 'next/head'
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
