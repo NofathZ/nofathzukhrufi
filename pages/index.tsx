@@ -5,28 +5,28 @@ import styles from "../styles/bento.module.scss";
 const Home: NextPage = () => {
   const experiences = [
     {
-      company: "Bank BTPN",
+      company: "SMBC Indonesia (Jenius Digital Banking)",
       role: "Digital Banking Solution Developer",
       duration: "Nov 2023 - Present",
-      desc: "Developed digital banking using React Native & ExpressJS. 100% unit test coverage.",
+      desc: "Fullstack Developer at SMBC Indonesia (Jenius), developing and optimizing digital banking services using microservices architecture, with expertise in system performance, security, and high-availability financial systems.",
     },
     {
       company: "DANA Indonesia",
       role: "Frontend Engineer Intern",
       duration: "Dec 2022 - Aug 2023",
-      desc: "Improved DANA App & Backoffice using VueJS and ReactJS.",
+      desc: "Frontend Engineer Intern at DANA Indonesia, contributing to secure wallet infrastructure and DANA Protection features using Vue.js, ensuring reliable and seamless user and admin experiences.",
     },
     {
       company: "Pahamify",
       role: "Frontend Engineer Intern",
       duration: "Feb - July 2022",
-      desc: "Enhanced website features and performance using VueJS.",
+      desc: "Frontend Engineer Intern at Pahamify, enhancing web platform performance using Vue.js and contributing to engineering strategy, including Vue 3 migration and repository architecture decisions.",
     },
     {
       company: "AutomateAll",
       role: "Frontend Engineer Intern",
       duration: "Sep - Nov 2021",
-      desc: "Developed website revamp using NextJS and Styled Components.",
+      desc: "Frontend Engineer Intern at AutomateAll, developing high-performance web applications using Next.js, with a focus on UI/UX implementation and agile delivery.",
     },
   ];
 
@@ -79,16 +79,18 @@ const Home: NextPage = () => {
             </div>
           </div>
           <p className={styles.projectDesc}>
-            A passionate fresh graduate building seamless digital experiences
-            using React, Vue, and NestJS. With over 1 year of professional
-            experience as an intern and freelancer, I focus on creating
-            high-quality web applications with clean architecture.
+            Fullstack Software Engineer with 2.5+ years of experience in digital
+            banking and fintech. Skilled in building scalable and secure
+            applications using React Native, ReactJS, Node.js (HapiJS/Express),
+            and Vue.js. Experienced in developing and optimizing banking systems
+            with a focus on performance, reliability, and compliance.
           </p>
           <div className="mt-auto pt-4 d-flex flex-wrap gap-2">
             <span className={styles.tag}>ReactJS</span>
-            <span className={styles.tag}>VueJS</span>
+            <span className={styles.tag}>React Native</span>
             <span className={styles.tag}>NestJS</span>
-            <span className={styles.tag}>TypeScript</span>
+            <span className={styles.tag}>VueJS</span>
+            <span className={styles.tag}>NodeJS</span>
           </div>
         </div>
 
