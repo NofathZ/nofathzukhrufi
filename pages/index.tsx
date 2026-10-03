@@ -1,6 +1,8 @@
 import type { NextPage } from "next";
+import Link from "next/link";
 import Layout from "../components/Layout/index";
 import styles from "../styles/bento.module.scss";
+import { projects } from "../data/projects";
 
 const Home: NextPage = () => {
   const experiences = [
@@ -30,40 +32,11 @@ const Home: NextPage = () => {
     },
   ];
 
-  const projects = [
-    {
-      type: "Web (FE)",
-      title: "Bima Utama",
-      link: "https://bimautama.com",
-      desc: "Industrial machinery and engineering solutions for large-scale operations.",
-      size: styles.boxTall,
-      variant: styles.bgBlue,
-      icon: "bi-gear-fill",
-    },
-    {
-      type: "Web (FE)",
-      title: "Resilience Test",
-      link: "https://resilience-test.vercel.app",
-      size: "",
-      variant: styles.bgYellow,
-      icon: "bi-activity",
-    },
-    {
-      type: "Web (FE)",
-      title: "Simi Studio",
-      link: "https://simistudio.vercel.app",
-      size: "",
-      variant: styles.bgPurple,
-      icon: "bi-window-stack",
-    },
-    {
-      type: "Web (FE)",
-      title: "Surevkos",
-      link: "https://surevkos.vercel.app",
-      size: "",
-      variant: styles.bgPink,
-      icon: "bi-house-check",
-    },
+  const projectCardConfigs = [
+    { size: styles.boxTall, variant: styles.bgBlue },
+    { size: "", variant: styles.bgYellow },
+    { size: "", variant: styles.bgPurple },
+    { size: "", variant: styles.bgPink },
   ];
 
   return (
@@ -71,26 +44,27 @@ const Home: NextPage = () => {
       <div className={styles.bentoContainer}>
         {/* Profile Section */}
         <div className={`${styles.bentoBox} ${styles.boxLarge}`}>
+          <div className="d-flex justify-content-between align-items-center mb-3">
+            <span className={styles.tag}>Profile</span>
+            <i className="bi bi-person-fill text-primary"></i>
+          </div>
           <div className={styles.profileInfo}>
             <div className={styles.avatar}>N</div>
             <div className={styles.details}>
               <h1>Nofath Zukhrufi Haideal</h1>
-              <p>Fullstack Web Developer</p>
+              <p>Fullstack Software Engineer</p>
             </div>
           </div>
           <p className={styles.projectDesc}>
-            Fullstack Software Engineer with 2.5+ years of experience in digital
-            banking and fintech. Skilled in building scalable and secure
-            applications using React Native, ReactJS, Node.js (HapiJS/Express),
-            and Vue.js. Experienced in developing and optimizing banking systems
-            with a focus on performance, reliability, and compliance.
+            Software Engineer with 3+ years of experience building scalable fintech and digital banking applications across frontend and backend systems. Specialized in React Native, Node.js, Redis, and microservices architecture with supporting DevOps expertise. Strong focus on security, performance, and distributed system reliability.
           </p>
-          <div className="mt-auto pt-4 d-flex flex-wrap gap-2">
+          <div className={`mt-auto pt-4 ${styles.tagsContainer}`}>
             <span className={styles.tag}>ReactJS</span>
             <span className={styles.tag}>React Native</span>
             <span className={styles.tag}>NestJS</span>
-            <span className={styles.tag}>VueJS</span>
             <span className={styles.tag}>NodeJS</span>
+            <span className={styles.tag}>Kubernetes</span>
+            <span className={styles.tag}>OpenShift</span>
           </div>
         </div>
 
@@ -181,12 +155,10 @@ const Home: NextPage = () => {
 
         {/* Projects */}
         {projects.map((project, idx) => (
-          <a
+          <Link
             key={idx}
-            href={project.link}
-            target="_blank"
-            rel="noreferrer"
-            className={`${styles.bentoBox} ${project.size} ${project.variant}`}
+            href={`/projects/${project.slug}`}
+            className={`${styles.bentoBox} ${projectCardConfigs[idx]?.size} ${projectCardConfigs[idx]?.variant}`}
           >
             <div className="d-flex justify-content-between align-items-start">
               <span className={styles.tag}>{project.type}</span>
@@ -200,11 +172,8 @@ const Home: NextPage = () => {
                 <i className={`bi ${project.icon}`}></i>
               </div>
               <h3 className={styles.projectTitle}>{project.title}</h3>
-              {project.desc && (
-                <p className={styles.projectDesc}>{project.desc}</p>
-              )}
             </div>
-          </a>
+          </Link>
         ))}
       </div>
     </Layout>
